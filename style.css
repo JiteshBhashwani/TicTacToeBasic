@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+body {
+  background-image: url(img/bg.png);
+}
+#restart-dialogue-overflow {
+  background-color: #7c7c7cc9;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  visibility: hidden;
+}
+#restart-dialogue-box {
+  position: relative;
+  top: 30vh;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.603);
+  color: rgb(236, 233, 221);
+  width: fit-content;
+  padding: 130px;
+  border-radius: 10px;
+}
+#restart-dialogue-close-button {
+  width: fit-content;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(250, 77, 77);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#restart-confirm-button {
+  margin-top: 5px;
+  width: 100px;
+  padding: 10px;
+  background-color: rgb(145, 145, 145);
+}
+#game-screen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#game-container {
+  margin: auto;
+  margin-top: 20vh;
+  background-color: rgba(255, 235, 205, 0.75);
+  border-radius: 10px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+}
+#game-title {
+  font-family: "Press Start 2P", Arial;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+#grids {
+  margin: auto;
+  display: flex;
+  width: 360px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid {
+  background-color: rgba(255, 255, 255, 0.527);
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 15px;
+  margin: 6px;
+  height: 90px;
+  width: 90px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 10px;
+}
+.grid:hover {
+  scale: 1.05;
+  border: 2.5px solid black;
+}
+.grid:active {
+  scale: 1;
+}
+#restart {
+  background: url(img/refresh.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 10px;
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+#gameover-dialogue-overflow {
+  background-color: #7c7c7cc9;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+#gameover-dialogue-box {
+  width: fit-content;
+  padding: 20px;
+  color: bisque;
+  background-color: rgba(0, 0, 0, 0.603);
+  background: linear-gradient(rgba(0, 0, 0, 0.932), rgba(0, 0, 0, 0.63));
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+}
